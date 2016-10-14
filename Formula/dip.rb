@@ -12,7 +12,7 @@ class Dip < Formula
   def install
     system "crystal", "deps"
     system "crystal", "build", "--release", "src/app.cr"
-    bin.install "dip"
+    bin.install "src/dip"
   end
 
   test do
