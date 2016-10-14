@@ -10,7 +10,8 @@ class Dip < Formula
   depends_on "bdw-gc"
 
   def install
-    system("crystal", "build", "--release", "src/app.cr")
+    system "crystal", "deps"
+    system "crystal", "build", "--release", "src/app.cr"
     bin.install "dip"
   end
 
