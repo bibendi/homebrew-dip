@@ -1,15 +1,13 @@
 DIP Homebrew Tap
 =====================
 
-This is a [Homebrew][brew] tap for formulae for software developed by Pinterest
+This is a [Homebrew][brew] tap for formulae for the [dip](https://github.com/bibendi/dip).
 
 
 Setup
 -----
 
-Using these formulae requires Homebrew, which in turn requires Xcode. If you
-have not yet installed Homebrew, a quick summary is at the end of this
-document.
+Using these formulae requires Homebrew.
 
 Once homebrew is installed, simply run:
 
@@ -20,7 +18,7 @@ Use
 
 To install software, just use `brew install` with the name of the formula. You
 may wish to run `brew update` before hand to get the latest version of the
-formulae. For example, to install the latest version of plank:
+formulae. For example, to install the latest version of dip:
 
     brew update
     brew install dip
@@ -29,7 +27,7 @@ To upgrade software:
 
     brew update
     brew upgrade    # upgrade all software installed with Homebrew
-    brew upgrade dip # update just the plank formula
+    brew upgrade dip # update just the dip formula
 
 
 Contributing
