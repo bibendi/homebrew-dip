@@ -13,7 +13,7 @@ class Dip < Formula
   end
 
   def install
-    inreplace "dip-#{os_name}-x86_64", "-x86_64", ""
+    inreplace "dip-#{os_name}-x86_64", "-#{os_name}-x86_64", ""
 
     bin.install "dip"
   end
