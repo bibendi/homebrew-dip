@@ -13,9 +13,9 @@ class Dip < Formula
   end
 
   def install
-    mv prefix/"dip-#{os_name}-x86_64", prefix/"dip"
+    bin.install "dip-#{os_name}-x86_64"
 
-    bin.install "dip"
+    mv bin/"dip-#{os_name}-x86_64", bin/"dip"
   end
 
   def os_name
