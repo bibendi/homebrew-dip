@@ -1,18 +1,31 @@
 class Dip < Formula
-  desc "Docker Interaction Process"
+  desc "CLI gives the native-like interaction with applications configured with Docker Compose"
   homepage "https://github.com/bibendi/dip"
-  url "https://github.com/bibendi/dip.git",
-      tag: "0.8.1",
-      revision: "9ff5dfa1403ec84ecc4983cc52401780cdad3a16"
+  version "3.8.3"
+  bottle :unneeded
 
-  depends_on "crystal-lang" => :build
-  depends_on "libyaml"
-  depends_on "bdw-gc"
+  if OS.mac?
+    url "https://github.com/bibendi/dip/releases/download/v3.8.3/dip-Darwin-x86_64"
+    sha256 "5c148a944318b4dafee18706a8084dc19cc15c556453845b1bd407a68018d464"
+  elsif OS.linux?
+    url "https://github.com/bibendi/dip/releases/download/v3.8.3/dip-Linux-x86_64"
+    sha256 "6d95926ba8666fdf8a4cbfb0d7470ab907cd5ea8df368cff5a338ce8edc19bb4"
+  end
 
   def install
-    system "crystal", "deps"
-    system "crystal", "build", "--release", "src/app.cr"
-    bin.install "src/dip"
+    inreplace "dip-#{os_name}-x86_64", "-x86_64", ""
+
+    bin.install "dip"
+  end
+
+  def os_name
+    if OS.mac?
+      "Darwin"
+    elsif OS.linux?
+      "Linux"
+    else
+      raise "Unknown OS!"
+    end
   end
 
   test do
