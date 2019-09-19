@@ -1,5 +1,5 @@
 class Dip < Formula
-  desc "CLI gives the native-like interaction with applications configured with Docker Compose"
+  desc "dip CLI gives the native-like interaction with Docker-Compose applications"
   homepage "https://github.com/bibendi/dip"
   version "3.8.3"
   bottle :unneeded
