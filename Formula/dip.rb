@@ -1,15 +1,15 @@
 class Dip < Formula
   desc "dip CLI gives the native-like interaction with Docker-Compose applications"
   homepage "https://github.com/bibendi/dip"
-  version "3.8.3"
+  version "4.0.0"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/bibendi/dip/releases/download/v3.8.3/dip-Darwin-x86_64"
-    sha256 "5c148a944318b4dafee18706a8084dc19cc15c556453845b1bd407a68018d464"
+    url "https://github.com/bibendi/dip/releases/download/v4.0.0/dip-Darwin-x86_64"
+    sha256 "b494fe846dbd41862ca9a72728b1d6be879d6b1cc3bf6866448bdeb184c113c1"
   elsif OS.linux?
-    url "https://github.com/bibendi/dip/releases/download/v3.8.3/dip-Linux-x86_64"
-    sha256 "6d95926ba8666fdf8a4cbfb0d7470ab907cd5ea8df368cff5a338ce8edc19bb4"
+    url "https://github.com/bibendi/dip/releases/download/v4.0.0/dip-Linux-x86_64"
+    sha256 "92d44b3832563926817f763e5d6c1c012c557b814ff0579cfd40bfe3a9bebed4"
   end
 
   def install
