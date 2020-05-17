@@ -1,5 +1,5 @@
 class Dip < Formula
-  VERSION = "5.0.0".freeze
+  VERSION = "6.0.0".freeze
 
   desc "dip CLI gives the native-like interaction with Docker-Compose applications"
   homepage "https://github.com/bibendi/dip"
@@ -8,10 +8,10 @@ class Dip < Formula
 
   if OS.mac?
     url "https://github.com/bibendi/dip/releases/download/v#{VERSION}/dip-Darwin-x86_64"
-    sha256 "32830d77b6905f200407d7db1ba94136d327c1847bd895b03d1187533afcb94c"
+    sha256 "d22b31869f49f8ccd04e38fec534d9970bcbab980e00853b400e47300638af8e"
   elsif OS.linux?
     url "https://github.com/bibendi/dip/releases/download/v#{VERSION}/dip-Linux-x86_64"
-    sha256 "500d1781aaa6297cdffe73d4d2f43c0d4a25eff8cde89b12098420521101b954"
+    sha256 "0e625c21ea6e0b54c8d79cae09aeda35f1a8979a32190d039e15d2bcf71cf45e"
   end
 
   def install
