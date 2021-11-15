@@ -4,7 +4,6 @@ class Dip < Formula
   desc "dip CLI gives the native-like interaction with Docker-Compose applications"
   homepage "https://github.com/bibendi/dip"
   version VERSION
-  bottle :unneeded
 
   if OS.mac?
     url "https://github.com/bibendi/dip/releases/download/v#{VERSION}/dip-Darwin-x86_64"
