@@ -1,3 +1,6 @@
+DEPRECATED. Dip doesn't prive binaries anymore. It's just a Ruby gem now.
+=========================================================================
+
 DIP Homebrew Tap
 =====================
 
